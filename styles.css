@@ -1,0 +1,119 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('images/default-background.jpg');
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.1s ease, background-image 0.5s ease; /* Smooth transition for background image */
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+.location input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.location button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.location button:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.location button:active {
+  background-color: #e0e0e0;
+}
+
+#weather-result {
+  margin-top: 20px;
+}
+
+/* Define styles for different weather conditions */
+.sunny {
+  background-image: url('images/sunny.jpg');
+}
+
+.haze {
+  background: url('images/haze.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cloudy {
+  background-image: url('images/cloudy.jpg');
+}
+
+.rainy {
+  background-image: url('images/rainy.jpg');
+}
+
+.snowy {
+  background-image: url('images/snowy.jpg');
+}
+
+/* Styles for weather effects */
+.sun {
+  width: 100px;
+  height: 100px;
+ 
+  border-radius: 50%;
+  animation: rotateSun 10s linear infinite;
+}
+
+.cloud {
+  width: 100px;
+  height: 50px;
+  
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  animation: moveClouds 10s linear infinite;
+}
+
+.rain {
+  width: 1px;
+  height: 50px;
+  
+  position: absolute;
+  bottom: 0;
+  animation: rainFall 1s linear infinite;
+}
+
+.snowflake {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  animation: snowFall 2s linear infinite;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
